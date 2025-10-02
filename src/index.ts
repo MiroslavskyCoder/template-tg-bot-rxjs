@@ -1,5 +1,9 @@
 
-const TELEGRAM_BOT_TOKEN = '';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '';
 
 import { BotService } from './bot.service';
 import { Router } from './router'; // Импортируем Router  
